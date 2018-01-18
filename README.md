@@ -1,37 +1,40 @@
 # Heimdall
 
+### Please read all the instructions before starting this code challenge.
+
 https://hexdocs.pm/phoenix/up_and_running.html
 
 Visit this link for instructions on how to install Phoenix, Elixir, and the hard deps (Erland, Postgres, Node etc...) and get it running.
 
-OK, so we need this thing to generate a check digit so that our barcodes can work.
-Suppose that you want to find the check digit of UPC-A number 72641217542.
+### Challenge
+
+Most products sold in retail have on them what's called a UPC-A barcode. 
+UPC-A barcodes are a set of 12 digits. The first 11 digits are a product identifier while the last digit is what's called a check digit. The check digit exists to ensure that the barcode was generated correctly. 
+Here's where the challenge begins.
+
+We need our phoenix app to be able to generate a check digit so that our barcodes will work.
+Suppose that you want to find the check digit of UPC-A number `72641217542`.
 From the right to the left, start with odd position, assign the odd/even position to each digit.
-Sum all digits in odd position and multiply the result by 3: (7+6+1+1+5+2)*3=66
-Sum all digits in even position: (2+4+2+7+4)=19
-Sum the results of step three and four: 66+19=85
+Sum all digits in odd position and multiply the result by 3: `(7+6+1+1+5+2)*3=66`
+Sum all digits in even position: `(2+4+2+7+4)=19`
+Sum the results of step three and four: `66+19=85`
 Divide the result of step four by 10. The check digit is the number which adds the remainder to 10.
 In our case, divide 85 by 10 we get the remainder 5.
 The check digit then is the result of >10-5=5.
 If there is no remainder then the check digit equals zero.
 http://www.azalea.com/white-papers/upc-barcode-check-digit/
 
+### Do Not
 
+Do not submit a pull request to this repo.
 
+Do not share your results with other applicants.
 
+### Upon Completion
 
+When finished, shoot us an [email](mailto:jobs@goskip.com) with the url of your forked repo.
 
-
-
-
-
-
-
-
-
-
-
-
+### More Instructions & Resources
 
 To start your Phoenix server:
 
