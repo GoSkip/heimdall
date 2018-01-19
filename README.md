@@ -24,15 +24,17 @@ The check digit then is the result of >10-5=5.
 If there is no remainder then the check digit equals zero.
 http://www.azalea.com/white-papers/upc-barcode-check-digit/
 
+There are two routes you need to implement and one bug to fix. All the work will be done in the `heimdall/lib/heimdall_web/controllers/api_controller.ex` file.
+
+### Upon Completion
+
+When finished, shoot us an [email](mailto:jobs@goskip.com) with the url of your forked repo.
+
 ### Do Not
 
 Do not submit a pull request to this repo.
 
 Do not share your results with other applicants.
-
-### Upon Completion
-
-When finished, shoot us an [email](mailto:jobs@goskip.com) with the url of your forked repo.
 
 ### More Instructions & Resources
 
