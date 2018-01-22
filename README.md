@@ -30,6 +30,8 @@ There are two routes you need to implement and one bug to fix. All the work will
 
 When finished, shoot us an [email](mailto:jobs@goskip.com) with the url of your forked repo.
 
+If for any reason you don't want to fork the repo, you can clone the repo and when you're finished zip it up and [email](mailto:jobs@goskip.com) it to us.
+
 ### Do Not
 
 Do not submit a pull request to this repo.
